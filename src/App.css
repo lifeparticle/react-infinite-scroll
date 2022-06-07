@@ -1,0 +1,33 @@
+.app {
+	padding: 100px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.scrollRight,
+.scrollLeft {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+}
+
+.scrollRight,
+.scrollLeft > div {
+	border: 2px solid rebeccapurple;
+	margin-bottom: 10px;
+}
+
+.scrollRightParent {
+	height: 800px;
+	overflow-y: scroll;
+}
+
+.scrollRightParent::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: rgb(255, 175, 175);
+	margin: 10px;
+}
+
+.scrollRightParent::-webkit-scrollbar {
+	width: 10px;
+}
