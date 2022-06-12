@@ -46,7 +46,6 @@ function App() {
 					endReached={loadMoreRight}
 					useWindowScroll
 					customScrollParent={parentRef.current}
-					overscan={1000}
 					itemContent={(index) => (
 						<div className="scrollRight">
 							<div>
